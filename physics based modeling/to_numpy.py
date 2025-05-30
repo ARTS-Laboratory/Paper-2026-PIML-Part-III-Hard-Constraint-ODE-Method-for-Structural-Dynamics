@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
+
 try:
     import IPython as IP
     ip = IP.get_ipython()
@@ -8,7 +9,6 @@ try:
         ip.run_line_magic('reset', '-sf')
 except Exception:
     pass  # Skip if IPython isn't installed 
-
 
 import numpy as np
 import os
