@@ -9,7 +9,7 @@ Comparison methods:
 PIML methods:
 1. Indirect measurement
 
-# Files too large for GitHub
+## Files too large for GitHub
 This repo has some files too large for GitHub. The workaround it to generate these files on your own. 
 1. In `physics based modeling`, run `to_numpy.py` to convert .csv files to .npy. This will save `.npz` versions of data in the `PIML examples/data/`.
 
@@ -21,7 +21,7 @@ The files are:
 1. PIML examples/model_predictions/pure_physics/k_pred.npy (May or may not be needed. )
 
 
-# Version control
+## Version control
 Tensorflow 2.10.0 (Nile) and 2.13.0 (Austin) were used to develop this code.
 
 
