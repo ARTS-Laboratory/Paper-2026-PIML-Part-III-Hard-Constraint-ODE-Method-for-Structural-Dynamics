@@ -1,5 +1,7 @@
 # PIML Example
 
+Run `solve_pure_physics.py` to generate the file `k_pred.np` in `model_predictions\pure_physics`.
+
 ## Codes
 1. [plot_results](plot_results.py)
 1. [train_pure_nn](train_pure_nn.py)
