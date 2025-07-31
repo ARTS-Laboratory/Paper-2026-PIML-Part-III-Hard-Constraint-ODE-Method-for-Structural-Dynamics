@@ -33,7 +33,7 @@ The comressed versions are used to get them under 500 MB so they can push to Git
 
 
 #%% for pinn tests
-test0 = np.loadtxt('./data/pinn_data/test_0.csv', delimiter=',')
+test0 = np.loadtxt('./data/pinn_data/test_1.csv', delimiter=',')
 np.save('../PIML examples/data/pinn_test_0.npy', test0)
 
 
