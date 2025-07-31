@@ -1,4 +1,4 @@
-# Paper-2026-IMAC-PIML
+# Physics Informed Machine Learning Part III: Hard-Constraint ODE Method for Structural Dynamics
 Paper 2026 IMAC PIML
 
 Tutorial codes demonstrating a variety of PIML methods.
