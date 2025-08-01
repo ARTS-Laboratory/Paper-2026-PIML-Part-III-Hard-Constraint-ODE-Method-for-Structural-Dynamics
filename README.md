@@ -20,8 +20,9 @@ The files are:
 1. PIML examples/data/v5/with_friction.npy
 1. PIML examples/model_predictions/pure_physics/k_pred.npy (May or may not be needed. )
 
-
 ## Version control
-Tensorflow 2.10.0 (Nile) and 2.13.0 (Austin) were used to develop this code.
+Nile built the first code in Tensorflow 2.10.0. Austin made small organizational changes and re-trained it in 2.13.0.
 
+### Environment
+Use the Anaconda environment in the repo 
 
