@@ -1,0 +1,72 @@
+\documentclass[10pt]{article}
+
+%--------- Page setup ---------%
+\usepackage[margin=0.75in]{geometry}
+\usepackage{graphicx}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{siunitx}
+\usepackage{enumitem}
+\usepackage{titlesec}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{times}
+\usepackage{fancyhdr}
+\usepackage{titling}
+
+%--------- Page Style ---------%
+\pagestyle{fancy}
+\fancyhf{}
+\rhead{\thepage}
+\renewcommand{\headrulewidth}{0pt}
+
+%--------- Section Formatting ---------%
+\titleformat{\section}
+{\normalfont\bfseries\large}{\thesection}{1em}{}
+\titleformat{\subsection}
+{\normalfont\bfseries\normalsize}{\thesubsection}{1em}{}
+
+%--------- Paragraph and line spacing ---------%
+\setlength{\parskip}{4pt}
+\setlength{\parindent}{0pt}
+\linespread{1.05}
+
+%--------- Figure Setup ---------%
+\captionsetup{font=small, labelfont=bf, justification=justified}
+\usepackage[export]{adjustbox} % for \includegraphics[frame], etc.
+
+%--------- Custom Commands ---------%
+\newcommand{\figref}[1]{Figure~\ref{#1}}
+
+%--------- Title ---------%
+\title{\vspace{-1.5cm}\textbf{Title of the Report}}
+\author{Author Name \\
+	Department Name, Institution \\
+	\texttt{email@domain.edu}}
+\date{\vspace{-1em}\today}
+
+%--------- Document Begins ---------%
+\begin{document}
+	\maketitle
+	\vspace{-1em}
+	\hrule
+	\vspace{0.5em}
+	
+	\section{Introduction}
+	This document can be used to log our progress and findings on physics informed machine learning.
+	
+	\section{Methodology}
+	Short description of equations and techniques used.
+	
+	\section{Results and Discussion}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=6.5in]{Paper-2026-PIML-Part-III-Hard-Constraint-ODE-Method-for-Structural-Dynamics\PIML examples\plots\k_paths.png}
+		\caption{k\_paths.}
+		\label{fig:k_paths}
+	\end{figure}
+
+\end{document}
