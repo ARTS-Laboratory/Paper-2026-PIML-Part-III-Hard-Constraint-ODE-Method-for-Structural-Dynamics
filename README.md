@@ -26,3 +26,44 @@ Nile built the first code in Tensorflow 2.10.0. Austin made small organizational
 ### Environment
 Use the Anaconda environment in the repo 
 
+## Cluster Computing
+Information below is specific to this project. Tutorials on general cluster usage can be found [here](https://uofsc.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8a7901a7-8611-44c7-af09-b0fc0166d1e1)
+
+## Building an environment
+Once in a folder specifically for environments, begin an idev session, then follow the prompts after each of these commands to build your environment.
+
+module load python3/anaconda/2023.9
+conda create --prefix=/work/USERNAME/ENVs/python310_env
+source activate /work/USERNAME/ENVs/python310_env
+conda install python==3.10.18
+conda install keras==2.10.0
+conda install tensorflow==2.10.0
+conda install numpy==1.26.4
+conda install pandas==2.3.1
+conda install matplotlib==3.10.0
+
+Once this is complete, the idev session can be ended. This environment will be used as long as it is referenced in your .sh file.
+
+### Building a .sh file
+In order to run a job, it must be done from an sbatch command so that slurm can control the order of the jobs on the cluster. Below is an example .sh file using the above environment.
+
+\#!/bin/sh
+\#SBATCH --job-name=PIML_training
+\#SBATCH --output train%piml.out
+\#SBATCH --error train%piml.err
+\#SBATCH -N 1
+\#SBATCH -n 32
+\#SBATCH -p defq-64core
+\#SBATCH --exclude=none[174-238]
+
+\#\# Load modules first:
+
+module load python3/anaconda/2023.9
+source activate /work/USERNAME/ENVS/python310_env
+
+\#\# Add code here:
+
+hostname
+date
+cd /work/USERNAME/PIML_Code
+python train_indirect_no_friction.py
