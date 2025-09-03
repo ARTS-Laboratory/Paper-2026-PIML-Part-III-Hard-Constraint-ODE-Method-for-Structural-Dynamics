@@ -29,7 +29,7 @@ Use the Anaconda environment in the repo
 ## Cluster Computing
 Information below is specific to this project. Tutorials on general cluster usage can be found [here](https://uofsc.hosted.panopto.com/Panopto/Pages/Viewer.aspx?id=8a7901a7-8611-44c7-af09-b0fc0166d1e1)
 
-## Building an environment
+### Building an environment
 Once in a folder specifically for environments, begin an idev session, then follow the prompts after each of these commands to build your environment.
 
 module load python3/anaconda/2023.9  
