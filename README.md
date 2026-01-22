@@ -7,10 +7,10 @@ Comparison methods:
 1. Pure NN
 
 PIML methods:
-1. Indirect measurement
+1. Hard-Constraint 
 
 ## Files too large for GitHub
-This repo has some files too large for GitHub. The workaround it to generate these files on your own. 
+This repo has some files too large for GitHub. The workaround is to generate these files on your own. 
 1. In `physics based modeling`, run `to_numpy.py` to convert .csv files to .npy. This will save `.npz` versions of data in the `PIML examples/data/`.
 
 We may try to get these to work with LFS in the future. For now, you can find the files [here](https://www.dropbox.com/scl/fo/p7u6dwy1t8o83hk3dgnlz/AO3S344MKnTcE55aHe9J2Gs?rlkey=6aor3ivq2wrm9j06h62nnedgn&dl=0).
@@ -21,7 +21,7 @@ The files are:
 1. PIML examples/model_predictions/pure_physics/k_pred.npy (May or may not be needed. )
 
 ## Version control
-Nile built the first code in Tensorflow 2.10.0. Austin made small organizational changes and re-trained it in 2.13.0.
+Nile built the first code in Tensorflow 2.10.0. Austin made small organizational changes and retrained it in 2.13.0.
 
 ### Environment
 Use the Anaconda environment in the repo 
@@ -45,7 +45,7 @@ conda install matplotlib==3.10.0
 Once this is complete, the idev session can be ended. This environment will be used as long as it is referenced in your .sh file.
 
 ### Building a .sh file
-In order to run a job, it must be done from an sbatch command so that slurm can control the order of the jobs on the cluster. Below is an example .sh file using the above environment.
+In order to run a job, it must be done from an sbatch command so that Slurm can control the order of the jobs on the cluster. Below is an example .sh file using the above environment.
 
 \#!/bin/sh  
 \#SBATCH --job-name=PIML_training  
